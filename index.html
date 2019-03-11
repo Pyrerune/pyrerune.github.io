@@ -1,17 +1,67 @@
-<!doctype html>
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+<head>
+  <meta charset="UTF-8">
+<meta name="og:title" content="Volaris | A Discord Bot"/>
+  <meta name="og:url" content="https://volaris.glitch.me"/>
+  <meta name="description" content="Website for the bot Volaris"/>
+<title>Volaris | A Discord Bot</title>
+<style>
+    body    { padding-top:50px; }
+  .test {background-color: #eeeeee; position: relative; }
+ 
+  .title{font-size: 30px}
+  .head{font-size:20px}
+  #inline{position: absolute center; } 
+  
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Pyrerune</title>
-  </head>
-  <body>
-   <div class="navbar-header">
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body class="container">
+
+<header>
+   
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+
+    <div class="navbar-header">
         <a class="navbar-brand" href="#">
           
             <span class="glyphicon glyphicon-tasks"></span>
@@ -20,27 +70,37 @@
         </a>
 
         <ul class="nav navbar-nav">
-            <li><a href="#" class="nav-link">Home</a>Home</li>
-            <li><a href="" class="nav-link disabled" >About</a></li>
+            <li><a href="#">Home</a>Home</li>
             <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    projects
-        </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="https://volaris.glitch.me">Volaris</a>
-    <a class="dropdown-item" href="#">Diamond</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    Projects
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://volaris.glitch.me">Volaris</a></li>
+    
+  </ul>
 </div>
         </ul>
     </div>
 
+</div>
+</nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
- </body>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Pyrerune</h1>
+        <p>A 14 year old developer who learns best through failure</p>
+      
+    </div>
+ 
+</main>
+
+<footer>
+  <p class="text-center text-muted">Something Should Be here.</p>
+</footer>
+
+</body>
 </html>
