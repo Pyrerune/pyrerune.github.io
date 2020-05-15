@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["options","Contains structs required for the configuration of the searcher module"],["searcher","Contains structs used for searching through text"]]});
