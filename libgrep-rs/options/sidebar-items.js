@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Options","Configurations options for Searcher"]]});
