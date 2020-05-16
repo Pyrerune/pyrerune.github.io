@@ -26,15 +26,21 @@
 <span id="26">26</span>
 <span id="27">27</span>
 <span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="doccomment">//! Contains structs required for the configuration of the searcher module</span>
 
 <span class="doccomment">///Configurations options for Searcher</span>
+
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Options</span> {
     <span class="kw">pub</span> <span class="ident">exclude</span>: <span class="ident">bool</span>,
     <span class="kw">pub</span> <span class="ident">include_before</span>: <span class="ident">bool</span>,
     <span class="kw">pub</span> <span class="ident">include_after</span>: <span class="ident">bool</span>,
+    <span class="kw">pub</span> <span class="ident">case_insensitive</span>: <span class="ident">bool</span>,
 }
 <span class="kw">impl</span> <span class="ident">Default</span> <span class="kw">for</span> <span class="ident">Options</span> {
 
@@ -43,15 +49,17 @@
             <span class="ident">exclude</span>: <span class="bool-val">false</span>,
             <span class="ident">include_before</span>: <span class="bool-val">false</span>,
             <span class="ident">include_after</span>: <span class="bool-val">false</span>,
+            <span class="ident">case_insensitive</span>: <span class="bool-val">false</span>
         }
     }
 }
 <span class="kw">impl</span> <span class="ident">Options</span> {
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">new</span>(<span class="ident">e</span>: <span class="ident">bool</span>, <span class="ident">ib</span>: <span class="ident">bool</span>, <span class="ident">ia</span>: <span class="ident">bool</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">Options</span> {
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">new</span>(<span class="ident">e</span>: <span class="ident">bool</span>, <span class="ident">ib</span>: <span class="ident">bool</span>, <span class="ident">ia</span>: <span class="ident">bool</span>, <span class="ident">cs</span>: <span class="ident">bool</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="ident">Options</span> {
         <span class="ident">Options</span> {
             <span class="ident">exclude</span>: <span class="ident">e</span>,
             <span class="ident">include_before</span>: <span class="ident">ib</span>,
             <span class="ident">include_after</span>: <span class="ident">ia</span>,
+            <span class="ident">case_insensitive</span>: <span class="ident">cs</span>,
         }
     }
 }
