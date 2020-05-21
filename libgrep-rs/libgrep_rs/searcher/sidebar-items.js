@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["Searcher","Searches through text for the given pattern"]]});
